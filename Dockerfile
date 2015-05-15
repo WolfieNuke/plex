@@ -20,7 +20,7 @@ ADD installplex.sh /
 RUN bash /installplex.sh
 
 # Fix a Debianism of plex's uid being 101
-RUN usermod -u 999 plex
+RUN usermod -u 1028 plex
 RUN usermod -g 100 plex
 
 VOLUME /config
